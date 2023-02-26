@@ -7,9 +7,8 @@ function App() {
   return (
     <div>
       <Club></Club>
-      <div className='Question-container'>
-        <Question></Question>
-      </div>
+      <Question></Question>
+      
     </div>
   );
 }
