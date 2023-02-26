@@ -1,0 +1,8 @@
+.Activities-container{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: #FAF8F1;
+}
+.Form-container{
+  background-color: #D6E4E5;
+}
