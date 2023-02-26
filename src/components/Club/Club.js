@@ -15,33 +15,33 @@ const Club = () => {
       .then(res => res.json())
       .then(data => setActivities(data))
   }, [])
-  useEffect(()=>{
-    const storedActivities =getStoredCart();
-    const savedActivities =[];
-    for(const id in storedActivities){
-      const addedActivities= activities.find(activity=>activity.id===id)
-      if(addedActivities){
+  useEffect(() => {
+    const storedActivities = getStoredCart();
+    const savedActivities = [];
+    for (const id in storedActivities) {
+      const addedActivities = activities.find(activity => activity.id === id)
+      if (addedActivities) {
         const quantity = storedActivities[id];
         addedActivities.quantity = quantity;
         savedActivities.push(addedActivities);
       }
     }
     setAddedActivities(savedActivities)
-  },[activities])
+  }, [activities])
 
 
 
   const handelAddToForm = (selectedActivities) => {
-    let newActivities=[];
-    const exists = addedActivities.find(activity=>activity.id===selectedActivities.id)
-    if(!exists){
-      selectedActivities.quantity=1;
-      newActivities=[...addedActivities,selectedActivities]
+    let newActivities = [];
+    const exists = addedActivities.find(activity => activity.id === selectedActivities.id)
+    if (!exists) {
+      selectedActivities.quantity = 1;
+      newActivities = [...addedActivities, selectedActivities]
     }
-    else{
-      const rest=addedActivities.filter(activity=>activity.id!==selectedActivities.id)
-      exists.quantity=exists.quantity+1;
-      newActivities=[...rest,exists]
+    else {
+      const rest = addedActivities.filter(activity => activity.id !== selectedActivities.id)
+      exists.quantity = exists.quantity + 1;
+      newActivities = [...rest, exists]
     }
     setAddedActivities(newActivities)
     addToDb(selectedActivities.id)
