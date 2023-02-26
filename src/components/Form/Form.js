@@ -64,7 +64,7 @@ const Form = ({ addedActivity }) => {
         </div>
       </div>
       <div className='d-flex justify-content-center'>
-        <button onClick={toast} className='btn btn-primary px-5'>Activity Complete</button>
+        <button onClick={toast} className='btn btn-primary px-5 mb-3'>Activity Complete</button>
       </div>
     </div>
   );
