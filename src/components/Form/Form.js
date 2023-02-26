@@ -39,9 +39,9 @@ const Form = ({ addedActivity }) => {
       </div>
       <div className='m-3'>
         <div className='py-2 text-center rounded d-flex flex-row justify-content-evenly bg-light'>
-          <div><span className='fw-bold'>52</span><small>kg</small><br />Weight</div>
-          <div><b>5.5</b><br />Height</div>
-          <div><span className='fw-bold'>23</span><small>yrs</small><br />Age</div>
+          <div><span className='fw-bold'>52</span><small>kg</small><br/>Weight</div>
+          <div><b>5.5</b><br/>Height</div>
+          <div><span className='fw-bold'>23</span><small>yrs</small><br/>Age</div>
         </div>
         <p className='py-2 fs-4 fw-bold'>Add a break</p>
         <div className='d-flex justify-content-evenly bg-light rounded' style={{ fontSize: "15px" }} >
