@@ -11,9 +11,6 @@ const Form = ({ addedActivity }) => {
   }
   const [brakeTime, setBrakeTime] = useState(time)
 
-  console.log(brakeTime);
-
-
   let duration = 0
   for (const items of addedActivity) {
     duration = duration + (items.time * items.quantity)
