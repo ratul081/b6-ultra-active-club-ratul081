@@ -28,8 +28,6 @@ const Club = () => {
     setAddedActivities(savedActivities)
   }, [activities])
 
-
-
   const handelAddToForm = (selectedActivities) => {
     let newActivities = [];
     const exists = addedActivities.find(activity => activity.id === selectedActivities.id)
