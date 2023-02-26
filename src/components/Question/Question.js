@@ -2,7 +2,7 @@ import React from 'react';
 
 const Question = () => {
   return (
-    <div className='m-5'>
+    <div className='mt-5 mx-3'>
       <div>
         <p className='fw-bold fs-1'>1. How does react work?</p>
         <p className='fa-1x'>While building client-side apps, a team of Facebook developers realized that the DOM is slow (The Document Object Model (DOM) is an application programming interface (API) for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.). So, to make it faster, React implements a virtual DOM that is basically a DOM tree representation in JavaScript. So when it needs to read or write to the DOM, it will use the virtual representation of it. Then the virtual DOM will try to find the most efficient way to update the browser’s DOM. Unlike browser DOM elements, React elements are plain objects and are cheap to create. React DOM takes care of updating the DOM to match the React elements. The reason for this is that JavaScript is very fast and it’s worth keeping a DOM tree in it to speed up its manipulation.</p>
@@ -14,7 +14,7 @@ const Question = () => {
       </div>
       <div>
         <p className='fw-bold fs-1'>3. How does react work?</p>
-        <ul>
+        <ul className='p-0 mx-2'>
           <li>Modifying the DOM: When a component needs to modify the DOM, it can use the useEffect hook to perform the DOM manipulation</li>
           <li>Timers and intervals: The useEffect hook can be used to set timers or intervals to perform a task at a specified interval. For example, you can use it to update a component's state every few seconds.</li>
           <li>Setting up event listeners: When a component needs to set up event listeners, it can use the useEffect hook to register and unregister the listeners.</li>

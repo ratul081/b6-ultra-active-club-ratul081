@@ -12,7 +12,7 @@ const Activities = ({ activity, handelAddToForm }) => {
           <p>For age : <b>{age}</b></p>
           <p>Time required : <b>{time}min</b></p>
           <div className="text-center">
-            <p onClick={() => { handelAddToForm(activity) }} type="button" style={{ padding: "10px 90px" }} className="btn btn-primary">Add to list</p>
+            <a onClick={() => { handelAddToForm(activity) }} type="button" style={{ padding: "10px 90px" }} className="btn btn-primary">Add to list</a>
           </div>
         </div>
       </div>

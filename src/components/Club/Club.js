@@ -47,13 +47,13 @@ const Club = () => {
   }
   return (
     <div className='Activities-container'>
-      <div className='p-5 g-col-6'>
+      <div className='m-lg-4 m-md-2 m-3'>
         <div className='d-flex'>
           <img style={{ height: '65px' }} className='mx-2' src={Pic} alt="" />
           <h1 className='text-success'>Ikigai Lifestyle</h1>
         </div>
         <p className='fs-4 mt-3 text-primary'>Select today’s activities</p>
-        <div className="row row-cols-1 row-cols-md-3 g-4">
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           {
             activities.map(activity =>
               <Activities
