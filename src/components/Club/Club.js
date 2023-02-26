@@ -4,7 +4,6 @@ import Form from '../Form/Form';
 import './Club.css'
 import Pic from '../../Images/Gym.png'
 import { addToDb, getStoredCart } from '../../utilities/fakedb';
-import Question from '../Question/Question';
 
 const Club = () => {
   const [activities, setActivities] = useState([]);
@@ -68,9 +67,6 @@ const Club = () => {
       </div>
       <div className='Form-container'>
         <Form addedActivity={addedActivities}></Form>
-      </div>
-      <div className='Question-container'>
-        <Question></Question>
       </div>
     </div>
   );
